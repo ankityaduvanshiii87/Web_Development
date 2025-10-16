@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form with Iframe Result</title>
+</head>
+<body>
+  <h1>Form Submission with Iframe</h1>
+  <form onsubmit="document.getElementById('resultFrame').srcdoc='<!DOCTYPE html><html><head><meta charset=&quot;UTF-8&quot;><title>Result</title></head><body><h2>Form successfully submitted.</h2></body></html>'; return false;">
+    <label for="text">Enter Text:</label><br>
+    <input type="text" id="text" name="textinput" required><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <h2>Result:</h2>
+  <iframe id="resultFrame" width="600" height="150"></iframe>
+</body>
+</html>

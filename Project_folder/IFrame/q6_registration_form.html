@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Registration Form</title>
+</head>
+<body>
+  <h1>User Registration</h1>
+  <form method="post" action="#">
+    <fieldset>
+      <legend>Registration Details</legend>
+
+      <label for="fullname">Full Name:</label><br>
+      <input type="text" id="fullname" name="fullname" required><br><br>
+
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" minlength="6" required><br><br>
+
+      <label for="confirm">Confirm Password:</label><br>
+      <input type="password" id="confirm" name="confirm" minlength="6" required><br><br>
+
+      <input type="submit" value="Register">
+      <input type="reset" value="Reset">
+    </fieldset>
+  </form>
+</body>
+</html>

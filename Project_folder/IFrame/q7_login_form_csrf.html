@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form</title>
+</head>
+<body>
+  <h1>User Login</h1>
+
+  <!-- CSRF token helps protect against Cross-Site Request Forgery attacks 
+       by ensuring that the form submission is coming from the legitimate site. -->
+
+  <form method="post" action="#">
+    <fieldset>
+      <legend>Login Details</legend>
+
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username" required><br><br>
+
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" required><br><br>
+
+      <!-- Hidden input field for dummy CSRF token -->
+      <input type="hidden" name="csrf_token" value="abc12345xyz67890">
+
+      <input type="submit" value="Login">
+    </fieldset>
+  </form>
+</body>
+</html>

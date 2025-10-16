@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+    "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+<head>
+  <title>Frameset Layout Example</title>
+</head>
+
+<!-- Divide the window into two horizontal frames: top for navigation, bottom for content -->
+<frameset rows="80,*" border="2">
+  <!-- Top frame: Navigation -->
+  <frame 
+    name="topFrame" 
+    srcdoc='
+      <!DOCTYPE html>
+      <html>
+      <head><title>Navigation</title></head>
+      <body bgcolor="#e0e0e0">
+        <center>
+          <a href="https://example.com/home" target="_blank">Home</a> |
+          <a href="https://example.com/about" target="_blank">About</a> |
+          <a href="https://example.com/contact" target="_blank">Contact</a>
+        </center>
+      </body>
+      </html>'
+    scrolling="no"
+    noresize>
+
+  <!-- Bottom frame: Welcome message -->
+  <frame 
+    name="bottomFrame" 
+    srcdoc='
+      <!DOCTYPE html>
+      <html>
+      <head><title>Welcome</title></head>
+      <body bgcolor="#f8f8f8">
+        <center><h1>Welcome to My Website</h1></center>
+      </body>
+      </html>'
+    scrolling="auto">
+
+  <noframes>
+    <body>
+      <p>Your browser does not support frames. Please use a modern browser.</p>
+    </body>
+  </noframes>
+</frameset>
+</html>
