@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #234;
+}
+.loader {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+}
+.circle {
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50%;
+  animation: bounce 0.8s infinite;
+}
+.circle2 { animation-delay: 0.2s; }
+.circle3 { animation-delay: 0.4s; }
+@keyframes bounce {
+  0%, 100% { transform: translateY(0);}
+  50% { transform: translateY(-22px);}
+}
