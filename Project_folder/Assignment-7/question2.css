@@ -1,0 +1,18 @@
+/* Height & Width Practice */
+body{font-family:Tahoma, Geneva, sans-serif;background:#f7fafc;padding:2rem}
+.wrap{display:flex;flex-direction:column;align-items:center;gap:1rem}
+.boxes{display:flex;gap:1rem;align-items:center;justify-content:center;height:60vh}
+.box{background:#fff;padding:1rem;border:1px solid #e2e8f0;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.04);overflow:hidden}
+
+.box.a{width:300px;height:120px;background:#bee3f8}
+.box.b{width:40%;min-height:20vh;background:#c6f6d5;overflow:auto}
+.box.c{width:18em;height:15vh;max-width:320px;background:#fefcbf}
+
+/* Center vertically and horizontally using flex alignment on the container */
+/* Responsive fallback: stack vertically on small screens */
+@media (max-width:700px){
+  .boxes{flex-direction:column;height:auto}
+  .box.b{width:90%}
+}
+
+/* Comments: demonstrate min-height, max-width and overflow properties */

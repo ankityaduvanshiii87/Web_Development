@@ -1,0 +1,251 @@
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4; /* Light gray background for the overall page */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures footer is at the bottom */
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* --- Container and Layout --- */
+
+.container-wrapper {
+    width: 90%; /* Main container width */
+    max-width: 1200px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 20px 0; /* Space above and below the main block */
+    border-radius: 5px;
+    overflow: hidden; /* To contain the floated or absolutely positioned children if any */
+}
+
+.main-content {
+    display: flex;
+    min-height: 600px; /* Minimum height for the main section */
+}
+
+/* --- Navbar (Header) --- */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    color: #0b2f4f; /* Dark blue from the image */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    color: #666;
+    padding-bottom: 5px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0b2f4f;
+}
+
+.nav-links .active {
+    color: #0b2f4f;
+    border-bottom: 2px solid #0b2f4f; /* Active link indicator */
+    font-weight: 500;
+}
+
+
+/* --- Sidebar (Dashboard Menu) --- */
+
+.sidebar {
+    width: 250px;
+    background-color: #0b2f4f; /* Dark blue background */
+    color: white;
+    padding: 20px 0;
+}
+
+.sidebar h3 {
+    padding: 10px 20px;
+    font-weight: normal;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.sidebar-nav a {
+    display: block;
+    padding: 12px 20px;
+    color: rgba(255, 255, 255, 0.8);
+    transition: background-color 0.2s, color 0.2s;
+    border-left: 5px solid transparent; /* Placeholder for active state */
+}
+
+.sidebar-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+/* Active Dashboard Link Style */
+.sidebar-nav a:first-child {
+    background-color: #1a4f78; /* Slightly lighter dark blue for active background */
+    color: white;
+    border-left: 5px solid #2874a6; /* Light blue accent bar */
+}
+
+.sidebar-nav a i {
+    margin-right: 10px;
+    width: 20px; /* Align icons */
+}
+
+/* --- Content Area --- */
+
+.content-area {
+    flex-grow: 1;
+    padding: 30px;
+    background-color: white;
+}
+
+.content-area h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.content-area p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* --- Cards --- */
+
+.card-container {
+    display: flex;
+    gap: 20px; /* Space between cards */
+    margin-top: 20px;
+}
+
+.card {
+    width: 250px; /* Card size */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    background-color: white;
+}
+
+.card-header {
+    background-image: linear-gradient(to right, #2874a6, #5dade2); /* Gradient blue from image */
+    color: white;
+    padding: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.btn.primary {
+    background-color: #2874a6; /* Solid button color */
+    color: white;
+}
+
+.btn.primary:hover {
+    background-color: #1a4f78;
+}
+
+.btn.secondary {
+    background-color: #d1e4f3; /* Lighter button color */
+    color: #2874a6;
+}
+
+.btn.secondary:hover {
+    background-color: #b0d3f0;
+}
+
+
+/* --- Footer --- */
+
+.footer {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0b2f4f; /* Dark blue background, similar to sidebar */
+    color: rgba(255, 255, 255, 0.7);
+    padding: 15px 30px;
+    font-size: 0.8rem;
+    border-radius: 0 0 5px 5px; /* Matches the corner of the container wrapper */
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    margin-right: 15px;
+    color: inherit;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+}
+
+.logo-small {
+    background-color: #4a6c8b; /* A lighter shade for the small logo background */
+    color: white;
+    font-weight: bold;
+    padding: 3px 6px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.social-icons i {
+    margin-left: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.social-icons i:hover {
+    color: white;
+}

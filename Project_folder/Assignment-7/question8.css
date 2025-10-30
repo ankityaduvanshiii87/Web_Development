@@ -1,0 +1,19 @@
+/* Box Model Exploration */
+body{font-family:Arial, Helvetica, sans-serif;padding:2rem;background:#f9fafb}
+.bm{max-width:900px;margin:0 auto}
+.examples{display:flex;gap:1.5rem;align-items:flex-start}
+.example{background:#fff;padding:1rem;border-radius:8px;border:1px solid #e6edf3;width:100%}
+.box{width:220px;height:80px;background:#e2e8f0;padding:16px;border:4px solid #3182ce;position:relative}
+.box .inside{background:#c6f6d5;padding:6px;margin-top:8px}
+
+/* default: content-box (browser default) */
+.default .box{box-sizing:content-box}
+
+/* border-box demo */
+.borderbox .box.bb{box-sizing:border-box}
+
+.desc{font-size:0.95rem;color:#334155;margin-top:0.5rem}
+
+@media(max-width:800px){.examples{flex-direction:column}}
+
+/* Comments: use different backgrounds and outlines to highlight content, padding, border and margin layers */

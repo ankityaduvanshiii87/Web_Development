@@ -1,0 +1,30 @@
+/* Advanced CSS Selectors demonstration */
+body{font-family:Calibri, Candara, sans-serif;padding:2rem;background:#fff}
+
+/* Attribute selector: style only text inputs */
+input[type="text"]{border:2px solid #3182ce;padding:8px;border-radius:6px}
+/* Attribute starts-with selector for https links */
+ a[href^="https"]{color:green;text-decoration:underline}
+ a[href^="http"]{color:#666}
+
+/* Pseudo-classes */
+a:hover{opacity:0.9}
+input:focus{outline:3px solid rgba(66,153,225,0.25)}
+
+/* nth-child */
+.demo li:nth-child(odd){background:#f7fafc}
+.demo li:nth-child(2){font-weight:bold}
+
+/* Combinators examples */
+/* child combinator - direct children only */
+main > section{margin-bottom:1.25rem}
+/* adjacent sibling combinator */
+section + section{border-top:1px dashed #e2e8f0;padding-top:1rem}
+/* general sibling: style all following lists */
+h2 ~ .demo{padding-left:0}
+
+/* Pseudo-elements */
+.demo li::before{content:"• ";color:#3182ce}
+.demo li::after{content:attr(data-note);font-size:0.85rem;color:#999;margin-left:6px}
+
+/* Comments: examples above show attribute selectors, pseudo-classes, pseudo-elements, and combinators. */

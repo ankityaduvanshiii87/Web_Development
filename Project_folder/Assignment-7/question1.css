@@ -1,0 +1,26 @@
+/* Borders & Padding styles */
+:root{--gap:1rem;--bg:#fbfbfb}
+body{font-family:Segoe UI, Arial, sans-serif;background:var(--bg);padding:2rem;color:#222}
+.container{display:flex;gap:var(--gap);flex-wrap:wrap;align-items:center}
+.box{background:white;padding:1rem;border-radius:6px;transition:border-color 0.25s ease, transform 0.2s;min-width:140px;text-align:center}
+
+/* Different border styles */
+.solid{border:3px solid #2b6cb0;padding:16px}
+.dashed{border:4px dashed #d69e2e;padding:24px}
+.double{border:6px double #38a169;padding:8px}
+.groove{border:5px groove #805ad5;padding:32px}
+
+/* Rounded example */
+.rounded{border:3px solid #e53e3e;border-radius:18px;padding:20px}
+
+/* Hover: change border color smoothly */
+.box:hover{border-color:#ff6b6b;transform:translateY(-4px)}
+
+/* Accessibility: ensure focus matches hover */
+.box:focus{outline:3px dashed rgba(0,0,0,0.12)}
+
+/* Small text styling */
+small{display:block;margin-top:8px;color:#555}
+
+/* Comments: Using flexbox to align boxes horizontally */
+/* end of file */

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Q8 - Box Model Exploration</title>
++  <link rel="stylesheet" href="question8.css">
++</head>
++<body>
++  <main class="bm">
++    <h1>Box Model Exploration</h1>
++    <section class="examples">
++      <div class="example default">
++        <h2>Default box-sizing</h2>
++        <div class="box content">Content
++          <div class="inside">Padding area</div>
++        </div>
++        <p class="desc">This example uses the default box model where width/height apply to content only.</p>
++      </div>
++
++      <div class="example borderbox">
++        <h2>border-box</h2>
++        <div class="box bb">Content
++          <div class="inside">Padding area</div>
++        </div>
++        <p class="desc">Using <code>box-sizing: border-box;</code> includes padding and border in the element's size.</p>
++      </div>
++    </section>
++  </main>
++</body>
++</html>

@@ -1,0 +1,19 @@
+/* Transformations showcase */
+body{font-family:Inter, Arial, sans-serif;padding:2rem;background:#f3f4f6}
+.transform-row{display:flex;gap:1rem;justify-content:center}
+.tbox{display:flex;flex-direction:column;align-items:center;gap:0.5rem}
+.shape{width:120px;height:120px;background:#fff;border-radius:8px;display:flex;align-items:center;justify-content:center;border:1px solid #e5e7eb;transition:all 0.4s ease}
+.figcaption{font-size:0.95rem}
+
+/* Individual transformations activated on hover */
+.rotate .shape:hover{transform:rotate(18deg)}
+.scale .shape:hover{transform:scale(1.15)}
+.translate .shape:hover{transform:translateY(-12px) translateX(8px)}
+.skew .shape:hover{transform:skewX(12deg) skewY(4deg)}
+
+/* labels under each box */
+.tbox figcaption{font-size:0.9rem;color:#374151}
+
+@media(max-width:700px){.transform-row{flex-direction:column;align-items:center}}
+
+/* each transformation uses `transition: all 0.4s ease;` above */

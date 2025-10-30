@@ -1,0 +1,19 @@
+/* Typography and Text Styling */
+body{font-family: 'Segoe UI', Roboto, Arial, sans-serif;padding:2rem;background:#fff;color:#111}
+.article{max-width:65ch;margin:0 auto}
+h1{font-family: Georgia, 'Times New Roman', serif;font-size:2rem;margin-bottom:0.5rem}
+.lead{font-size:1.05rem;color:#374151;line-height:1.6}
+
+p{font-size:1rem;line-height:1.7;letter-spacing:0.2px;margin-bottom:1rem}
+.large{font-size:1.15rem;font-weight:600}
+
+/* Styling semantic text elements */
+mark{background:#fff3bf;color:#92400e;padding:0.15rem 0.25rem;border-radius:3px}
+strong{color:#1f2937}
+em{color:#7c3aed}
+
+/* ::first-letter and ::first-line demonstrations */
+.article p::first-letter{font-size:2.2rem;float:left;margin-right:0.4rem;color:#b91c1c;font-weight:700}
+.article p::first-line{font-variant:small-caps;color:#065f46}
+
+/* Comments: line-height and letter-spacing tuned for readability; multiple font families used for fallback */
