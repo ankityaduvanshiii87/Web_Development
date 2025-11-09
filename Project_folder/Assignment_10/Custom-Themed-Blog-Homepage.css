@@ -1,0 +1,6 @@
+:root{
+  --bs-primary: #e05712;
+  --bs-font-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+body { font-family: var(--bs-font-sans-serif); }
+.card-title { color: var(--bs-primary); }
