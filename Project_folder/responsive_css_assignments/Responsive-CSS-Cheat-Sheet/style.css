@@ -1,0 +1,13 @@
+/* Responsive CSS Cheat Sheet */
+body{font-family:system-ui,Arial;margin:0;background:#fff;color:#111}
+.cheats{max-width:1100px;margin:36px auto;padding:18px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(3,1fr)}
+.item{background:#f6f9ff;padding:16px;border-radius:8px;transition:transform 220ms ease,background 220ms ease}
+.item:hover{transform:translateY(-6px);background:linear-gradient(135deg,#eef2ff,#fff)}
+.item h3{margin:0 0 8px}
+/* responsive columns */
+@media (max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:700px){
+  .grid{grid-template-columns:1fr}
+  .item{display:flex;flex-direction:column}
+}

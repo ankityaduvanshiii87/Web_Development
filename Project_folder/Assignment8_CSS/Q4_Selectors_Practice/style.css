@@ -1,0 +1,31 @@
+
+/* Q4 - Selectors Practice */
+/* Element selector: styles all <p> elements */
+p{color:#0f172a;line-height:1.5}
+
+/* Class selector: .highlight */
+.highlight{background:#fef3c7;padding:8px;border-radius:6px}
+
+/* ID selector: #unique - IDs are unique on the page */
+#unique{font-weight:700;color:#075985}
+
+/* Attribute selector: selects links whose href starts with https */
+a[href^="https"]{color:#059669;font-weight:600}
+
+/* Child combinator '>' - selects direct children only */
+/* .wrap > .child will style only direct children with class .child */
+.wrap > .child{border-left:4px solid #60a5fa;padding-left:8px}
+
+/* Adjacent sibling '+' - targets a paragraph immediately after another */
+p + p{margin-top:6px}
+
+/* General sibling '~' - targets any following siblings */
+p ~ p{opacity:0.98}
+
+/* Descendant selector (space) - select p inside .wrap */
+.wrap p{font-size:0.95rem}
+
+/* Semantic layout styles */
+body{margin:0;padding:24px;background:#f8fafc;font-family:Arial,Helvetica,sans-serif}
+header h1{text-align:center;margin-bottom:12px}
+main{max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:16px}

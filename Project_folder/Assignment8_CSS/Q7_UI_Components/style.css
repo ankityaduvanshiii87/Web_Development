@@ -1,0 +1,12 @@
+
+/* Q7 - UI Components */
+/* Card with soft gradient background */
+*{box-sizing:border-box;font-family:Arial,Helvetica,sans-serif;margin:0;padding:0}
+body{min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#f8fafc,#eef2ff)}
+.card{width:320px;background:#fff;border-radius:12px;box-shadow:0 12px 40px rgba(2,6,23,0.08);padding:18px}
+.card-header h2{margin:0 0 12px 0}
+.search{width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef8;margin-bottom:12px}
+.controls{display:flex;gap:8px;align-items:center}
+.btn{padding:8px 12px;border-radius:8px;border:none;background:#2563eb;color:#fff;cursor:pointer}
+.select{padding:8px;border-radius:8px;border:1px solid #e6eef8}
+.search:focus, .btn:focus, .select:focus{outline:3px solid rgba(37,99,235,0.18);outline-offset:4px}

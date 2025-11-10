@@ -1,0 +1,21 @@
+
+/* Q2 - Tooltip Demo */
+/* Center content with Flexbox */
+*{box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+body{margin:0;background:#f8fafc;padding:32px;color:#0f172a}
+header h1{text-align:center;margin-bottom:18px}
+.center{display:flex;align-items:center;justify-content:center;min-height:60vh}
+.tip-wrap{display:flex;gap:24px;align-items:center;position:relative}
+.tip-item{position:relative;padding:8px 12px;background:#fff;border-radius:6px;cursor:default;box-shadow:0 8px 20px rgba(2,6,23,0.06)}
+
+/* Tooltip using absolute positioning, initially hidden via opacity */
+.tooltip{position:absolute;left:50%;transform:translateX(-50%) translateY(-8px);bottom:110%;white-space:nowrap;background:#111;color:#fff;padding:6px 8px;border-radius:6px;opacity:0;pointer-events:none;transition:opacity 0.3s ease-in-out, transform 0.3s ease-in-out;font-size:0.9rem}
+
+/* small arrow using pseudo-element */
+.tooltip::after{content:"";position:absolute;left:50%;transform:translateX(-50%);top:100%;border-width:6px;border-style:solid;border-color:#111 transparent transparent transparent;}
+
+/* Show tooltip on hover: fade in and slide slightly */
+.tip-item:hover .tooltip{opacity:1;transform:translateX(-50%) translateY(-12px);pointer-events:auto}
+
+/* Responsive: wrap when narrow */
+@media(max-width:600px){.tip-wrap{flex-direction:column}}

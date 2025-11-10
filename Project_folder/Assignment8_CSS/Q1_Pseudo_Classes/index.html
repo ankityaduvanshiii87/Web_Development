@@ -1,0 +1,38 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pseudo-Classes Demo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>Pseudo-Classes Demonstration</h1></header>
+<main class="row">
+  <section class="example">
+    <h2>&:hover</h2>
+    <p>Hover over the link to change its background color.</p>
+    <a href="#" class="link">Hover me</a>
+  </section>
+  <section class="example">
+    <h2>&:focus</h2>
+    <p>Focus the input (tab into it) to see focus styling.</p>
+    <input type="text" placeholder="Tab into me">
+  </section>
+  <section class="example">
+    <h2>&:active</h2>
+    <p>Press and hold the button to see :active state.</p>
+    <button class="btn">Press me</button>
+  </section>
+  <section class="example">
+    <h2>&:nth-child()</h2>
+    <p>List items styled with nth-child to alternate colors.</p>
+    <ul class="demo-list">
+      <li>First</li><li>Second</li><li>Third</li><li>Fourth</li>
+    </ul>
+  </section>
+</main>
+<footer><p>Short explanations next to each example show pseudo-class usage.</p></footer>
+</body>
+</html>

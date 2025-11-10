@@ -1,0 +1,29 @@
+
+/* Q6 - Animations */
+/* Center everything */
+*{box-sizing:border-box} body{margin:0;height:100vh;display:flex;align-items:center;justify-content:center;background:#f8fafc;font-family:Arial}
+.center{display:flex;gap:28px;align-items:center;justify-content:center}
+
+/* moving box */
+.anim-box{width:90px;height:90px;background:#60a5fa;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff}
+
+/* move left-right */
+.move{animation:slide 2s ease-in-out infinite alternate;animation-delay:0s;}
+
+/* bounce using transform and timing */
+.bounce{background:#f97316;animation:bounce 1.2s ease-in-out infinite;animation-delay:0.2s}
+
+/* color-changing text box */
+.color-txt{width:auto;padding:10px 14px;background:transparent;color:#111;font-weight:700;animation:colorchange 3s ease-in-out infinite;animation-direction:alternate;}
+
+/* keyframes */
+@keyframes slide{from{transform:translateX(-8px)} to{transform:translateX(18px)}}
+@keyframes bounce{0%{transform:translateY(0)}50%{transform:translateY(-18px)}100%{transform:translateY(0)}}
+@keyframes colorchange{0%{color:#111}50%{color:#e11d48}100%{color:#111}}
+
+/* animation properties demonstration */
+.move{animation-iteration-count:infinite;animation-direction:alternate}
+.bounce{animation-iteration-count:infinite;}
+
+/* responsive wrapping */
+@media(max-width:700px){.center{flex-direction:column}}

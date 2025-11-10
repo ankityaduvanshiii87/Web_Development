@@ -1,0 +1,15 @@
+/* Responsive Web Design Layout */
+*{box-sizing:border-box}
+body{font-family:system-ui,Segoe UI,Roboto,Arial;margin:0;color:#1a1a1a;background:#f4f6fb}
+.site-header{display:flex;justify-content:space-between;align-items:center;padding:18px 32px;background:#fff;box-shadow:0 2px 8px rgba(10,10,20,0.04)}
+.logo{font-weight:700;font-size:1.25rem}
+.nav a{margin-left:18px;text-decoration:none;color:#333;font-weight:600}
+.features{display:flex;gap:20px;padding:28px;max-width:1100px;margin:18px auto}
+.feature{flex:1;background:#fff;padding:22px;border-radius:10px;box-shadow:0 8px 18px rgba(10,10,30,0.06);transition:transform 250ms ease}
+.feature:hover{transform:scale(1.03)}
+.feature h2{margin-top:0}
+.site-footer{text-align:center;padding:18px;background:#fff;margin-top:18px;border-top:1px solid rgba(0,0,0,0.04)}
+/* Stack features below 750px */
+@media (max-width:750px){
+  .features{flex-direction:column}
+}

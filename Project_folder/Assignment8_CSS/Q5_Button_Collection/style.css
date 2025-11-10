@@ -1,0 +1,27 @@
+
+/* Q5 - Styled Buttons */
+/* Layout using Flexbox */
+*{box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+body{margin:0;padding:28px;background:#f7fafc;color:#0f172a}
+header h1{text-align:center;margin-bottom:12px}
+.btn-row{display:flex;gap:12px;justify-content:center;align-items:center;flex-wrap:wrap}
+
+/* shared button styles */
+.btn{padding:10px 16px;border-radius:8px;border:none;cursor:pointer;transition:all 0.22s ease;box-shadow:0 8px 18px rgba(2,6,23,0.06)}
+
+/* primary */
+.primary{background:#2563eb;color:#fff}
+.primary:hover{transform:translateY(-3px)}
+.primary:active{transform:translateY(1px)}
+
+/* secondary */
+.secondary{background:#10b981;color:#fff}
+.secondary:hover{filter:brightness(0.95)}
+
+/* outline */
+.outline{background:transparent;border:2px solid #374151;color:#374151}
+.outline:hover{background:#374151;color:#fff}
+
+/* disabled */
+.btn[disabled], .btn.disabled{opacity:0.5;cursor:not-allowed;box-shadow:none}
+.btn:focus{outline:3px solid rgba(59,130,246,0.24);outline-offset:4px}

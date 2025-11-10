@@ -1,0 +1,9 @@
+/* Responsive Design Principles Summary */
+body{font-family:system-ui,Arial;margin:0;background:#fff;color:#111}
+.principles{max-width:900px;margin:28px auto;padding:18px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.box{background:#f4f8ff;padding:14px;border-radius:8px;transition:background 220ms ease,color 220ms ease}
+.box:hover{background:linear-gradient(90deg,#e8f0ff,#fff);color:#075985}
+.box pre{margin:8px 0 0;padding:8px;background:rgba(0,0,0,0.03);border-radius:6px}
+/* single column below 600px */
+@media (max-width:600px){.grid{grid-template-columns:1fr}}

@@ -1,0 +1,10 @@
+
+/* Q9 - Combined Effects */
+/* Flexbox distribute items evenly */
+*{box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+body{margin:0;padding:28px;background:#f7fafc;color:#0f172a}
+.row{display:flex;gap:18px;justify-content:center;align-items:center;flex-wrap:wrap}
+.fx{padding:10px 14px;border-radius:10px;border:2px solid transparent;background:#111;color:#fff;transition:all 0.25s ease;box-shadow:0 8px 20px rgba(2,6,23,0.06);cursor:pointer}
+.fx:hover{transform:scale(1.06);background:#2563eb;border-color:rgba(255,255,255,0.12);box-shadow:0 22px 40px rgba(37,99,235,0.12)}
+.fx:focus{outline:3px solid rgba(37,99,235,0.18);outline-offset:4px}
+@media(max-width:700px){.row{flex-direction:column}}

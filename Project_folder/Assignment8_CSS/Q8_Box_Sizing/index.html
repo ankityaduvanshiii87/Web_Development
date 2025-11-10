@@ -1,0 +1,17 @@
+
+<!doctype html><html lang="en"><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>Box-Sizing Comparison</title><link rel='stylesheet' href='style.css'></head>
+<body>
+<header><h1>Box-Sizing Comparison</h1></header>
+<main class="compare">
+  <section class="box default">
+    <h2>Default (content-box)</h2>
+    <p>This box uses the browser default box-sizing. Padding and border are added to the total width.</p>
+  </section>
+  <section class="box borderbox">
+    <h2>border-box</h2>
+    <p>This box uses <code>box-sizing: border-box</code>. Padding and border are included in the width.</p>
+  </section>
+</main>
+<footer><p>Both boxes have equal specified width and padding to highlight the difference.</p></footer>
+</body></html>

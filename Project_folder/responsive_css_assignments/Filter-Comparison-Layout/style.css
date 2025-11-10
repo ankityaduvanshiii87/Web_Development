@@ -1,0 +1,10 @@
+/* Filter Comparison Layout */
+body{font-family:system-ui,Arial;margin:0;background:#fff;color:#111}
+.compare{max-width:1000px;margin:24px auto;padding:18px;text-align:center}
+.pair{display:flex;gap:16px;align-items:flex-start;justify-content:center}
+.pair figure{background:#f7f9ff;border-radius:8px;padding:8px;overflow:hidden;flex:1}
+.pair img{width:100%;height:320px;object-fit:cover;transition:filter 360ms ease}
+.filtered{filter:contrast(1.5)}
+.pair figure:hover .filtered{filter:none}
+/* Stack vertically below 700px */
+@media (max-width:700px){.pair{flex-direction:column}.pair img{height:420px}}

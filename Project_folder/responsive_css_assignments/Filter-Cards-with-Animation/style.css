@@ -1,0 +1,17 @@
+/* Filter Cards with Animation */
+body{font-family:system-ui,Arial;margin:0;background:#f7f8fb;color:#111}
+.profiles{max-width:1000px;margin:0 auto;padding:28px;text-align:center}
+.cards{display:flex;gap:18px;justify-content:center;animation:fadeIn 700ms ease both}
+.profile{background:#fff;border-radius:10px;overflow:hidden;width:300px;box-shadow:0 8px 20px rgba(12,12,30,0.06);transition:transform 260ms ease}
+.profile img{width:100%;height:200px;object-fit:cover;display:block;filter:grayscale(90%);transition:filter 240ms ease}
+.profile .info{padding:16px}
+.profile:hover img{filter:none}
+.profile:hover{transform:translateY(-10px)}
+/* Stack vertically below 800px */
+@media (max-width:800px){
+  .cards{flex-direction:column;align-items:center}
+}
+@keyframes fadeIn{
+  from{opacity:0;transform:translateY(8px)}
+  to{opacity:1;transform:translateY(0)}
+}
