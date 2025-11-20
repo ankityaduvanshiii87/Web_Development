@@ -1,0 +1,81 @@
+{
+  "login": [
+    {
+      "username": "user1",
+      "password": "pass123",
+      "id": "5726"
+    },
+    {
+      "username": "user2",
+      "password": "pass456",
+      "id": "0aaf"
+    }
+  ],
+  "signup": [
+    {
+      "username": "newuser",
+      "password": "newpass",
+      "full_name": "New User",
+      "phone": "123-456-7890",
+      "email": "newuser@example.com",
+      "id": "8dec"
+    },
+    {
+      "id": "7196",
+      "username": "example@gmail.com",
+      "password": "1234567890@",
+      "full_name": "Ansh Agarwal",
+      "phone": "741852963",
+      "email": "example@gmail.com",
+      "country": "india",
+      "gender": "male"
+    },
+    {
+      "id": "4e37",
+      "username": "sparsh@gmail.com",
+      "password": "1234@345",
+      "full_name": "sparsh",
+      "phone": "741852963",
+      "email": "sparsh@gmail.com",
+      "country": "india",
+      "gender": "male"
+    },
+    {
+      "id": "9388",
+      "username": "example46@gmail.com",
+      "password": "po90PO()",
+      "full_name": "User 46",
+      "phone": "7894561230",
+      "email": "example46@gmail.com",
+      "country": "india",
+      "gender": "male"
+    },
+    {
+      "id": "8a13",
+      "username": "user48@gmail.com",
+      "password": "u78iU&*I",
+      "full_name": "user 48",
+      "phone": "3214569870",
+      "email": "user48@gmail.com",
+      "country": "india",
+      "gender": "male"
+    },
+    {
+      "id": "e50b",
+      "username": "user49@gmail.com",
+      "password": "12wq!@WQ",
+      "full_name": "user 49",
+      "phone": "9874563210",
+      "email": "user49@gmail.com",
+      "country": "india",
+      "gender": "male"
+    },
+    {
+      "id": "a49e",
+      "username": "user50@gmail.com",
+      "password": "67uy^&UY",
+      "full_name": "user 50",
+      "phone": "8796541230"
+    }
+  ]
+}
