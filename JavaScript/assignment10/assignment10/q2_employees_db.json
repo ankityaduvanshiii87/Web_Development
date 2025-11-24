@@ -1,0 +1,29 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Alice",
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "name": "Bob",
+      "status": "inactive"
+    },
+    {
+      "id": 3,
+      "name": "Charlie",
+      "status": "active"
+    },
+    {
+      "id": 4,
+      "name": "Diana",
+      "status": "inactive"
+    },
+    {
+      "id": 5,
+      "name": "Evan",
+      "status": "active"
+    }
+  ]
+}

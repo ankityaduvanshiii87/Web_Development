@@ -1,0 +1,10 @@
+body { font-family: Arial, sans-serif; padding: 20px; background:#f7f7f7; color:#111; }
+.container { max-width:800px; margin:0 auto; background:#fff; padding:20px; box-shadow:0 2px 6px rgba(0,0,0,0.1);}
+h1{margin-top:0;}
+button{cursor:pointer;}
+.hidden{display:none;}
+.input, input, textarea{font-size:16px;padding:8px;margin:6px 0;width:100%;}
+.small{font-size:14px;color:#666;}
+.warn{background:yellow;}
+.danger{background:#ffb3b3;}
+`

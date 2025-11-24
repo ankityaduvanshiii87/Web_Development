@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Q9 - Multi jQuery</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script>var jq1 = jQuery.noConflict(true);</script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>var jq2 = jQuery.noConflict(true); window.jq1 = jq1; window.jq2 = jq2;</script>
+</head>
+<body>
+  <main>
+    <h1>Widgets</h1>
+    <div id="carousel">
+      <div class="slide">Slide 1</div>
+      <div class="slide">Slide 2</div>
+      <div class="slide">Slide 3</div>
+      <div class="slide">Slide 4</div>
+      <div class="slide">Slide 5</div>
+    </div>
+    <button id="openModal">Open Modal (v2)</button>
+    <div id="modal" style="display:none; position:fixed; left:20%; top:20%; background:#fff; padding:20px; border:1px solid #000;">
+      Notification modal (v2)
+    </div>
+    <div class="widget">Widget A</div>
+    <div class="widget">Widget B</div>
+    <div class="widget">Widget C</div>
+  </main>
+
+  <script>
+    (function($){
+      var idx = 0;
+      setInterval(function(){
+        $('#carousel .slide').hide();
+        $('#carousel .slide').eq(idx).show();
+        idx = (idx + 1) % $('#carousel .slide').length;
+      }, 2000);
+      $('.widget').first().css('border','2px solid blue');
+    })(window.jq1);
+
+    (function($){
+      $('#openModal').on('click', function(){ $('#modal').show(); });
+      $('#modal').on('click', function(){ $(this).hide(); });
+      $('.widget').on('mouseenter', function(e){
+        var t = $('<div class="tip">Tooltip: '+ $(this).text() +'</div>');
+        $('body').append(t);
+        t.css({position:'absolute', left: e.pageX+5, top: e.pageY+5, background:'#eee', padding:'4px'});
+        $(this).data('tip', t);
+      }).on('mouseleave', function(){
+        var t = $(this).data('tip');
+        if (t) t.remove();
+      });
+    })(window.jq2);
+  </script>
+</body>
+</html>

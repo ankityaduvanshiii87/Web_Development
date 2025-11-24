@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Q2 - Product Highlight</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .product { padding:10px; margin:6px; border:1px solid #ccc; display:inline-block; width:150px; vertical-align:top; }
+    .highlight { background: #fffae6; }
+    .details { display:none; font-size:12px; color:#333; }
+    .selected { border:2px solid gold; }
+    .discount { background:#e6f7ff; }
+    .out { opacity:0.5; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Products</h1>
+    <div id="products">
+      <div class="product" data-price="19.99" data-stock="5" data-discount="10">
+        <h3 class="title">T-Shirt</h3>
+        <div class="details">Material: Cotton<br>Size: M</div>
+        <button class="fav">♡</button>
+      </div>
+      <div class="product" data-price="49.99" data-stock="0">
+        <h3 class="title">Sneakers</h3>
+        <div class="details">Size: 9<br>Color: White</div>
+        <button class="fav">♡</button>
+      </div>
+      <div class="product" data-price="9.99" data-stock="12" data-discount="5">
+        <h3 class="title">Socks</h3>
+        <div class="details">Pack of 3<br>Color: Black</div>
+        <button class="fav">♡</button>
+      </div>
+      <div class="product" data-price="29.99" data-stock="3">
+        <h3 class="title">Cap</h3>
+        <div class="details">Adjustable<br>Logo</div>
+        <button class="fav">♡</button>
+      </div>
+      <div class="product" data-price="199.99" data-stock="2" data-discount="15">
+        <h3 class="title">Jacket</h3>
+        <div class="details">Waterproof<br>Sizes S-XL</div>
+        <button class="fav">♡</button>
+      </div>
+    </div>
+  </main>
+  <script src="q2.js"></script>
+</body>
+</html>

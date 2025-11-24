@@ -1,0 +1,78 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "User A"
+    },
+    {
+      "id": 2,
+      "name": "User B"
+    },
+    {
+      "id": 3,
+      "name": "User C"
+    },
+    {
+      "id": 4,
+      "name": "User D"
+    },
+    {
+      "id": 5,
+      "name": "User E"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "userId": 1,
+      "total": 99.99
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "total": 49.5
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "total": 150.0
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "total": 20.0
+    },
+    {
+      "id": 5,
+      "userId": 4,
+      "total": 10.0
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Keyboard",
+      "price": 29.99
+    },
+    {
+      "id": 2,
+      "name": "Monitor",
+      "price": 159.99
+    },
+    {
+      "id": 3,
+      "name": "USB Cable",
+      "price": 5.99
+    },
+    {
+      "id": 4,
+      "name": "Chair",
+      "price": 89.99
+    },
+    {
+      "id": 5,
+      "name": "Desk Lamp",
+      "price": 15.0
+    }
+  ]
+}

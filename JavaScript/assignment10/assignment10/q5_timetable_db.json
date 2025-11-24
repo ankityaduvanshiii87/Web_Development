@@ -1,0 +1,46 @@
+{
+  "timetable": [
+    {
+      "id": 1,
+      "day": "Monday",
+      "subject": "Math",
+      "faculty": "Dr. A",
+      "time": "09:00 - 10:00"
+    },
+    {
+      "id": 2,
+      "day": "Monday",
+      "subject": "Physics",
+      "faculty": "Dr. B",
+      "time": "10:15 - 11:15"
+    },
+    {
+      "id": 3,
+      "day": "Tuesday",
+      "subject": "Chemistry",
+      "faculty": "Dr. C",
+      "time": "09:00 - 10:00"
+    },
+    {
+      "id": 4,
+      "day": "Wednesday",
+      "subject": "Biology",
+      "faculty": "Dr. D",
+      "time": "11:30 - 12:30"
+    },
+    {
+      "id": 5,
+      "day": "Friday",
+      "subject": "Computer Science",
+      "faculty": "Dr. E",
+      "time": "14:00 - 15:30"
+    },
+    {
+      "id": 6,
+      "day": "Thursday",
+      "subject": "History",
+      "faculty": "Dr. F",
+      "time": "13:00 - 14:00"
+    }
+  ]
+}

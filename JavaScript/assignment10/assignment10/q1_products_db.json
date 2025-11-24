@@ -1,0 +1,39 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Vintage T-Shirt",
+      "price": 19.99,
+      "image": "https://picsum.photos/seed/p1/200/150",
+      "description": "100% cotton"
+    },
+    {
+      "id": 2,
+      "name": "Running Sneakers",
+      "price": 79.5,
+      "image": "https://picsum.photos/seed/p2/200/150",
+      "description": "Lightweight"
+    },
+    {
+      "id": 3,
+      "name": "Leather Wallet",
+      "price": 29.0,
+      "image": "https://picsum.photos/seed/p3/200/150",
+      "description": "Genuine leather"
+    },
+    {
+      "id": 4,
+      "name": "Wireless Mouse",
+      "price": 25.99,
+      "image": "https://picsum.photos/seed/p4/200/150",
+      "description": "Ergonomic"
+    },
+    {
+      "id": 5,
+      "name": "Water Bottle",
+      "price": 12.0,
+      "image": "https://picsum.photos/seed/p5/200/150",
+      "description": "Insulated 500ml"
+    }
+  ]
+}
